@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+
+            <div class="logo">YouTube<sup style="font-size: x-small;">IN</sup></div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search">
+            <button onclick="searchVideos()">Search</button>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li>Home</li>
+                <li>Trending</li>
+                <li>Subscriptions</li>
+                <li>Library</li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li>Home</li><br>
+                <li>Trending</li><br>
+                <li>Subscriptions</li><br>
+                <li>Library</li><br>
+                <li>History</li><br>
+                <li>Watch Later</li><br>
+                <li>Liked Videos</li><br>
+            </ul>
+        </aside>
+        
+        <section class="content" id="content">
+            <div class="video-list" id="video-list">
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="info">
+                        <h4>Video 1</h4>
+                        <p>Channel Name</p>
+                        <p>1M views</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/T2KfM0J17bA?si=go0ihNce0py1r8qX" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="info">
+                        <h4>I trained with OLYMPIC Athlete</h4>
+                        <p>Channel Name</p>
+                        <p>500K views</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQ62VMueb4A?si=vSohrdolP08_QQCe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="info">
+                        <h4>Video 3</h4>
+                        <p>Channel Name</p>
+                        <p>750K views</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jvgm3IT5DsI?si=74rlzr8QHzVOOTzy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="info">
+                        <h4>Video 4</h4>
+                        <p>Channel Name</p>
+                        <p>1.2M views</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/p48D2NqM9KE?si=PdAXfbMfG9psXk1m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="info">
+                        <h4>Video 5</h4>
+                        <p>Channel Name</p>
+                        <p>1.2M views</p>
+                    </div>
+                </div>  <div class="video-card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NtsJ5m6C7dU?si=mynN4mEUnDyIMYLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="info">
+                        <h4>Video 6</h4>
+                        <p>Channel Name</p>
+                        <p>1.2M views</p>
+                    </div>
+                </div>
+              
+                <!-- Video cards will be inserted here -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
